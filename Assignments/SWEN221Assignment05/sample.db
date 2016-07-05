@@ -1,0 +1,23 @@
+Customers,0,"David J. Pearce","45 Adelaide St\nPetone",FALSE,"This is a very reliable customer"
+Customers,1,"John Smith","137 Upland Road\nKelburn\nWellington",FALSE,""
+Customers,2,"Apple NZ","PO Box 912015\nAuckland Mail Centre\nAuckland 1142\nNew Zealand",TRUE,""
+Customers,3,"Telecom NZ","Telecom NZ Limited\nPrivate Bag 4942\nChristchurch 8140\nNew Zealand",TRUE,""
+Customers,4,"Joe Bloggs","22 Taranaki St\nWellington",FALSE,""
+Categories,0,"Monitor"
+Categories,1,"Motherboard"
+Categories,2,"Mouse"
+Categories,3,"Keyboard"
+Categories,4,"Soundcard"
+Categories,5,"Wireless NIC"
+Categories,6,"Ethernet NIC"
+Items,0,[Categories:0],"Dell","GX44","32in Flat Panel",340,23
+Items,1,[Categories:0],"Philips","P200","13in Flat Panel",20,11
+Items,2,[Categories:0],"Samsung","A300","20in Flat Panel",100,10
+Items,3,[Categories:1],"Intel","X22","Mini-form\n3xPCI slots",200,4
+Items,4,[Categories:1],"Asus","A1","Mini-form\n1xPCI slot",100,0
+Items,5,[Categories:2],"Microsoft","MS001","Bluetooth\nInfa-red",20,1
+Items,6,[Categories:2],"Logitech","LZ234","USB\nInfra-red mouse ",40,10
+Orders,0,[Customers:0],[Items:1],1
+Orders,1,[Customers:3],[Items:5],10
+Orders,2,[Customers:2],[Items:4],1
+Orders,3,[Customers:2],[Items:3],2

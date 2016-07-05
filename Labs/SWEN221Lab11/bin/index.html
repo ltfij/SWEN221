@@ -1,0 +1,57 @@
+<!-- The following is a very simple example page -->
+<html>
+<title>
+Welcome to the SimpleWeb HTTP Server!
+</title>
+<body>
+<h1>Welcome to the SimpleWeb HTTP Server!</h1>
+<center><img src="images/dave.jpg"></center>
+<p>If you've managed to get this far, then you've obviously setup and run the web server correctly --- well done!</p>
+
+<p>SimpleWeb is really the most simple kind
+of <a href="http://en.wikipedia.org/wiki/Web_server">web server</a>
+possible, and was written
+by <a href="http://www.ecs.vuw.ac.nz/~djp">David J. Pearce</a> on 2nd
+June, 2010 at the <a href="http://www.ecs.vuw.ac.nz/">School of
+Engineering and Computer
+Science</a>, <a href="http://www.vuw.ac.nz">Victoria University</a>.
+SimpleWeb is not
+an <a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP
+1.0/1.1</a> compliant server --- but it does at least serve up files
+if you ask it.</p>
+<p>The main problem with SimpleWeb is that it is
+not <a href="http://en.wikipedia.org/wiki/Thread_%28computer_science%29">multi-threaded</a>.
+This means it can only handle one connection at a time.  You can test
+this by trying to load a large file
+(like <a href="images/moon.jpg">this one</a>) in a separate tab and
+then, whilst this is progressing, following another link
+(like <a href="shakespear/henryIVpart1.html">this one</a>).  What you
+should find, is that you won't be able to load any more pages from the
+webserver until that large file has completed (because it processes
+them one at a time).  Obviously, if one user downloading a file meant
+all other users of the same website had to wait, the internet would be
+a very frustrating place indeed!
+</p>
+<p>So, your job with this assignment is to update SimpleWeb to be multi-threaded!</p>
+<hr>
+<h2>Content</h2>
+<p>To show off the web server in action, here is some interesting content courtesy of <a href="http://shakespeare.mit.edu/">MIT's online works of Shakespear</a>:</p> 
+<br>
+<center>
+<table border=1 width="50%">
+<tr><td rowspan=2>Henry IV</td><td><a href="shakespear/henryIVpart1.html">Part 1</a></td></tr>
+<tr><td><a href="shakespear/henryIVpart2.html">Part 2</a></td></tr>
+<tr><td>Henry V</td><td><a href="shakespear/henryV.html">Entire Play</a></td></tr>
+<tr><td rowspan=3>Henry VI</td><td><a href="shakespear/henryVIpart1.html">Part 1</a></td></tr>
+<tr><td><a href="shakespear/henryVIpart2.html">Part 2</a></td></tr>
+<tr><td><a href="shakespear/henryVIpart3.html">Part 3</a></td></tr>
+<tr><td>King John</td><td><a href="shakespear/john.html">Entire Play</a></td></tr>
+<tr><td>Richard II</td><td><a href="shakespear/richardII.html">Entire Play</a></td></tr>
+<tr><td>Richard III</td><td><a href="shakespear/richardIII.html">Entire Play</a></td></tr>
+</table>
+</center>
+<br>
+<br>
+<hr>
+</body>
+</html>

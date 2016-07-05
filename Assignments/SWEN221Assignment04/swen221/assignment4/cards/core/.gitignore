@@ -1,0 +1,9 @@
+/Card$Rank.class
+/Card$Suit.class
+/Card.class
+/CardGame.class
+/Hand.class
+/IllegalMove.class
+/Player$Direction.class
+/Player.class
+/Trick.class
